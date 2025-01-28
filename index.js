@@ -7,10 +7,11 @@ const drinkRoutes = require('./routes/drinksRoutes');
 const brunchRoutes = require('./routes/brunchRoutes');
 
 const app = express();
-// CORS options to allow multiple origins (http://localhost:5173 and http://localhost:5174)
+
 const corsOptions = {
-  origin: ['https://restaurant-project-client-kappa.vercel.app', 'http://localhost:5173'], // Allow both frontend ports
-  methods: ['GET', 'POST'],
+  origin: ['https://restaurant-project-client-kappa.vercel.app', 'http://localhost:5000'], // Allow both frontend ports
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
 };
 
