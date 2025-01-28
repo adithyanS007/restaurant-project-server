@@ -9,9 +9,9 @@ const brunchRoutes = require('./routes/brunchRoutes');
 const app = express();
 
 const corsOptions = {
-  origin: ['https://restaurant-project-client-kappa.vercel.app', 'http://localhost:5000'], // Allow both frontend ports
+  origin: ['https://restaurant-project-client-kappa.vercel.app',], // Allow both frontend ports
   methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
+  allowedHeaders: ["Content-Type"],
   credentials: true
 };
 
