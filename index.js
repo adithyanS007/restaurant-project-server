@@ -12,7 +12,7 @@ const corsOptions = {
   origin: ['https://restaurant-project-client-kappa.vercel.app',], // Allow both frontend ports
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type"],
-  credentials: true
+  credentials: false
 };
 
 // Use CORS middleware with the specified options
